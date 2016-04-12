@@ -9,19 +9,25 @@
 /* Begin PBXBuildFile section */
 		3F928CE81CBC68AF00D1600C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F928CE71CBC68AF00D1600C /* AppDelegate.swift */; };
 		3F928CEA1CBC68AF00D1600C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F928CE91CBC68AF00D1600C /* ViewController.swift */; };
-		3F928CED1CBC68AF00D1600C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F928CEB1CBC68AF00D1600C /* Main.storyboard */; };
 		3F928CEF1CBC68AF00D1600C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F928CEE1CBC68AF00D1600C /* Assets.xcassets */; };
 		3F928CF21CBC68AF00D1600C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F928CF01CBC68AF00D1600C /* LaunchScreen.storyboard */; };
+		3F928D001CBC7A2200D1600C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F928CFF1CBC7A2200D1600C /* Main.storyboard */; };
+		3F928D021CBCA29800D1600C /* CustomFoldingTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F928D011CBCA29800D1600C /* CustomFoldingTableCell.swift */; };
+		917EBF3A4E471890639A0ACC /* Pods_Magic_Folding_Cells.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E4877911F5641E06242750 /* Pods_Magic_Folding_Cells.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00E4877911F5641E06242750 /* Pods_Magic_Folding_Cells.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Magic_Folding_Cells.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F928CE41CBC68AF00D1600C /* Magic Folding Cells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Magic Folding Cells.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F928CE71CBC68AF00D1600C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F928CE91CBC68AF00D1600C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3F928CEC1CBC68AF00D1600C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F928CEE1CBC68AF00D1600C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F928CF11CBC68AF00D1600C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F928CF31CBC68AF00D1600C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F928CFF1CBC7A2200D1600C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3F928D011CBCA29800D1600C /* CustomFoldingTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFoldingTableCell.swift; sourceTree = "<group>"; };
+		856CEC1F40794B132475E225 /* Pods-Magic Folding Cells.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Magic Folding Cells.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Magic Folding Cells/Pods-Magic Folding Cells.debug.xcconfig"; sourceTree = "<group>"; };
+		885BB357EC2C8E4B6FC3ACB2 /* Pods-Magic Folding Cells.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Magic Folding Cells.release.xcconfig"; path = "Pods/Target Support Files/Pods-Magic Folding Cells/Pods-Magic Folding Cells.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				917EBF3A4E471890639A0ACC /* Pods_Magic_Folding_Cells.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A0C39C3494A2644CCA986DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00E4877911F5641E06242750 /* Pods_Magic_Folding_Cells.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3F928CDB1CBC68AF00D1600C = {
 			isa = PBXGroup;
 			children = (
 				3F928CE61CBC68AF00D1600C /* Magic Folding Cells */,
 				3F928CE51CBC68AF00D1600C /* Products */,
+				E01B6A5124D716CAEB558C5A /* Pods */,
+				2A0C39C3494A2644CCA986DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +73,22 @@
 			children = (
 				3F928CE71CBC68AF00D1600C /* AppDelegate.swift */,
 				3F928CE91CBC68AF00D1600C /* ViewController.swift */,
-				3F928CEB1CBC68AF00D1600C /* Main.storyboard */,
 				3F928CEE1CBC68AF00D1600C /* Assets.xcassets */,
 				3F928CF01CBC68AF00D1600C /* LaunchScreen.storyboard */,
 				3F928CF31CBC68AF00D1600C /* Info.plist */,
+				3F928CFF1CBC7A2200D1600C /* Main.storyboard */,
+				3F928D011CBCA29800D1600C /* CustomFoldingTableCell.swift */,
 			);
 			path = "Magic Folding Cells";
+			sourceTree = "<group>";
+		};
+		E01B6A5124D716CAEB558C5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				856CEC1F40794B132475E225 /* Pods-Magic Folding Cells.debug.xcconfig */,
+				885BB357EC2C8E4B6FC3ACB2 /* Pods-Magic Folding Cells.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F928CF61CBC68AF00D1600C /* Build configuration list for PBXNativeTarget "Magic Folding Cells" */;
 			buildPhases = (
+				AED2AA98DA5E557D84F01F3E /* Check Pods Manifest.lock */,
 				3F928CE01CBC68AF00D1600C /* Sources */,
 				3F928CE11CBC68AF00D1600C /* Frameworks */,
 				3F928CE21CBC68AF00D1600C /* Resources */,
+				51360FAEBBBD1B39CF084120 /* Embed Pods Frameworks */,
+				E81183F4B9BA65796C6DB9D8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,13 +152,61 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F928D001CBC7A2200D1600C /* Main.storyboard in Resources */,
 				3F928CF21CBC68AF00D1600C /* LaunchScreen.storyboard in Resources */,
 				3F928CEF1CBC68AF00D1600C /* Assets.xcassets in Resources */,
-				3F928CED1CBC68AF00D1600C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51360FAEBBBD1B39CF084120 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Magic Folding Cells/Pods-Magic Folding Cells-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AED2AA98DA5E557D84F01F3E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E81183F4B9BA65796C6DB9D8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Magic Folding Cells/Pods-Magic Folding Cells-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3F928CE01CBC68AF00D1600C /* Sources */ = {
@@ -136,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F928CEA1CBC68AF00D1600C /* ViewController.swift in Sources */,
+				3F928D021CBCA29800D1600C /* CustomFoldingTableCell.swift in Sources */,
 				3F928CE81CBC68AF00D1600C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +222,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3F928CEB1CBC68AF00D1600C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F928CEC1CBC68AF00D1600C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3F928CF01CBC68AF00D1600C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -247,6 +318,7 @@
 		};
 		3F928CF71CBC68AF00D1600C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 856CEC1F40794B132475E225 /* Pods-Magic Folding Cells.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Magic Folding Cells/Info.plist";
@@ -258,6 +330,7 @@
 		};
 		3F928CF81CBC68AF00D1600C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 885BB357EC2C8E4B6FC3ACB2 /* Pods-Magic Folding Cells.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Magic Folding Cells/Info.plist";
@@ -286,6 +359,7 @@
 				3F928CF81CBC68AF00D1600C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
